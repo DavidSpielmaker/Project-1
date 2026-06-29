@@ -50,7 +50,3 @@ def graph_get(token, path):
     
 token = get_token()
 policies = graph_get(token, "/identity/conditionalAccess/policies")
-
-print(f"Retrieved {len(policies)} conditional access policy(ies)\n")
-for p in policies:
-    print(p["state"], "-", p["displayName"])
